@@ -1,0 +1,28 @@
+.header-display {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px 25px 50px;
+  }
+
+  .anchors-text {
+    font-weight: bold;
+  }
+  
+  #Accueil:hover, #A_propos:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      height: 50px;
+    }
+  
+    .header-display {
+      align-items: center;
+      padding: 10px 20px 10px 30px;
+    }
+  
+    .anchors-text {
+      font-size: 12px;
+    }
+  }
