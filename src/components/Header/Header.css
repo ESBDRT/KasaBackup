@@ -7,7 +7,7 @@
   .anchors-text {
     font-weight: bold;
   }
-  
+
   #Accueil:hover, #A_propos:hover {
     text-decoration: underline;
   }

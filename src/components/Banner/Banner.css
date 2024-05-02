@@ -31,5 +31,6 @@
 
     .text {
         font-size: 25px;
+        transform: translateY(10px);
     }
 }

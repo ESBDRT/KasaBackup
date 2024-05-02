@@ -18,10 +18,10 @@
     transform: translateX(15px) translateY(-75px);
     width: 70%;
     color: white;
-    font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: bold;
 }
 
 .cover-img {
@@ -29,4 +29,19 @@
     border-radius: 20px;
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 768px) {
+    .Gallery {
+        flex-direction: column;
+        margin: 0px 20px 0px 20px;
+        background-color: white;
+    }
+
+    .article {
+        width: 100%;
+        margin: 25px 0px 10px 0px;
+    }
+
+    
 }
