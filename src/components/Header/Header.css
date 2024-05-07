@@ -11,6 +11,11 @@
   #Accueil:hover, #A_propos:hover {
     text-decoration: underline;
   }
+
+  .anchor {
+    text-decoration: none;
+    color: black;
+  }
   
   @media (max-width: 768px) {
     .logo {

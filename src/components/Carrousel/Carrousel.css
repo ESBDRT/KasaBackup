@@ -1,0 +1,29 @@
+.host-carrousel {
+    display: flex;
+    margin: 0px 100px 0px 100px;
+    height: 400px;
+}
+
+.pictures {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.arrow-right {
+    color: white;
+    font-size: 150px;
+    align-self: center;
+    position: absolute;
+    margin: 0px 100px 0px 100px;
+    right: 0;
+}
+
+.arrow-left {
+    color: white;
+    font-size: 150px;
+    align-self: center;
+    position: absolute;
+    margin: 0px 100px 0px 100px;
+    left: 0;
+}

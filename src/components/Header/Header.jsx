@@ -7,10 +7,10 @@ function Header() {
       <div className='header-display'>
       <img src={KasaLogo} className='logo' alt='kasalogo' />
       <nav className='header-display anchors-text'>
-        <Link to='/'>
-          <ul id='Accueil'>Accueil</ul>
+        <Link to='/' className='anchor'>
+          <ul id='Accueil' className='anchor'>Accueil</ul>
         </Link>
-        <Link to='/about'>
+        <Link to='/about' className='anchor'>
           <ul id='A_propos'>A propos</ul>
         </Link>
       </nav>

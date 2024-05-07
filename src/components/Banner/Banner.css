@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     object-fit: contain;
-    height: 150px;
-    margin: 0px 50px;
+    height: 250px;
+    margin: 0px 100px;
 }
 
 .banner-img {
@@ -20,7 +20,7 @@
     color: white;
     font-weight: bold;
     font-size: 30px;
-    transform: translateY(25px);
+    transform: translateY(70px);
 }
 
 @media (max-width: 768px) {

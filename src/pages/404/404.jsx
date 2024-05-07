@@ -1,5 +1,5 @@
-import Header from '../components/Header/Header.jsx';
-import Footer from '../components/Footer/Footer.jsx';
+import Header from '../../components/Header/Header.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 import './404.css' 
 
 function error404() {
