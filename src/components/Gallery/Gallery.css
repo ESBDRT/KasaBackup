@@ -4,14 +4,16 @@
     justify-content: space-evenly;
     margin: 30px 100px;
     background-color: #F6F6F6;
-    border-radius: 20px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 .article {
     border-radius: 5px;
-    width: 30%;
-    height: 250px;
+    width: 26%;
+    height: 340px;
     margin: 40px 0px 20px 0px;
+    text-decoration: none;
 }
 
 .title {
@@ -21,7 +23,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-weight: bold;
+    text-shadow: black 5px 0 10px;
 }
 
 .cover-img {

@@ -18,3 +18,18 @@
     margin-top: -150px;
     margin-bottom: 75px;
 }
+
+.error-anchor {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .text404 {
+        font-size: 100px;
+    }
+
+    .error {
+        margin-top: 0px;
+        color: black;
+    }
+}

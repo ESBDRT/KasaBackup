@@ -11,12 +11,12 @@ function Carrousel() {
   const pictures = data.find(item => item.id === id)?.pictures;
   const [currentPicture, setCurrentPicture] = React.useState(0);
 
-  const handleNextPicture = () => {
+  const NextPicture = () => {
     setCurrentPicture((prevPicture) => (prevPicture + 1) % pictures.length);
   };
-
-  const handlePreviousPicture = () => {
-    setCurrentPicture((prevPicture) => (prevPicture - 1) % pictures.length);
+  
+  const PreviousPicture = () => {
+    setCurrentPicture((prevPicture) => prevPicture === 0 ? pictures.length - 1 : prevPicture - 1);
   };
 
   return (
@@ -24,8 +24,8 @@ function Carrousel() {
       {pictures?.map((picture, index) => (
         <img className='pictures'key={index} src={picture} alt={`picture-${index}`} style={{ display: index === currentPicture? 'block' : 'none' }} />
       ))}
-      <IoIosArrowBack className='arrow-left'/>
-      <IoIosArrowForward className='arrow-right' onClick={handleNextPicture} />
+      <IoIosArrowBack className='arrow-left' onClick={PreviousPicture}/>
+      <IoIosArrowForward className='arrow-right' onClick={NextPicture} />
     </div>
   );
 }

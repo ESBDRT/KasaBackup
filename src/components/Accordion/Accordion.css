@@ -1,12 +1,18 @@
 .Accordions {
     display: flex;
     flex-direction: column;
-    align-items: cen;
     margin-top: 25px;
     width: 75%;
   }
+
+  .Accordion-host-div {
+    display: flex;
+    gap: 50px;
+    margin: 0px 100px 50px 100px;
+}
   
   .Accordion-title {
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,30 +26,16 @@
   
   .Accordion-title:hover,
   .active .Accordion-title {
-    cursor: pointer;
-    
+    cursor: pointer; 
   }
   
   .Accordion-icon {
-    position: relative;
-    width: 10px;
-    height: 1px;
-    background: #333;
+    transition: transform 0.5s ease;
+    font-size: 35px;
   }
-  
-  .Accordion-icon::before {
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 1px;
-    background: #333;
-    transform: rotate(90deg);
-    transition: all .2s;
-  }
-  
-  .active .Accordion-icon::before {
-    transform: rotate(0deg);
-    opacity: 0;
+
+  .rotate {
+    transform: rotate(180deg);
   }
   
   .Accordion-content {
@@ -53,20 +45,42 @@
     overflow: hidden;
     padding: 0 1rem;
     transition: all .2s ease-in;
-    width: 95%;   
-    align-self: center;
     border-radius: 5px;
-    font-weight: bold;
+    text-decoration: none;
   }
   
   .active .Accordion-content {
     visibility: visible;
     height: auto;
     overflow: visible;
-    padding: 1rem;
-    opacity: 1;
-    background-color: #EEE; 
-    width: 95%;   
-    align-self: center;
+    padding-top: 1rem;
+    opacity: 1; 
     border-radius: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
   }
+
+  @media (max-width: 768px) {
+
+    .Accordion-host-div {  
+      flex-direction: column;
+      gap: 0px;
+      margin: 0px 0px;
+    }
+    
+    .Accordions {
+      width: 85%;
+    }
+
+    .Accordion-title {
+        height: 20px;
+        width: 100%;
+        transform: translate(15px, -20px);
+    }
+
+    .active .Accordion-content {
+        padding: 0rem;
+        margin-left: 25px;
+        padding-top: 0rem;
+    }
+}

@@ -16,18 +16,25 @@
     text-decoration: none;
     color: black;
   }
+
+  .logo {
+    padding-left: 50px;
+  }
   
   @media (max-width: 768px) {
     .logo {
       height: 50px;
+      padding-left: 20px;
     }
   
     .header-display {
+      justify-content: unset;
       align-items: center;
-      padding: 10px 20px 10px 30px;
+      gap: 20px;
+      padding: 10px 0px 10px 0px;
     }
   
     .anchors-text {
-      font-size: 12px;
+      font-size: 14px;
     }
   }

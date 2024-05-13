@@ -27,3 +27,15 @@
     margin: 0px 100px 0px 100px;
     left: 0;
 }
+
+@media (max-width: 768px) {
+    .host-carrousel {
+        margin: 0px 25px;
+        height: 300px;
+    }
+
+    .arrow-left, .arrow-right{
+        font-size: 35px;
+        margin: 0px 25px;
+    }
+}
