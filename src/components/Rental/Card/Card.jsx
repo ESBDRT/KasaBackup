@@ -1,8 +1,8 @@
-import './Gallery.css' 
-import jsonData from '../../data/logements.json';
+import './Card.css' 
+import jsonData from '../../../data/logements.json';
 import { Link } from 'react-router-dom';
 
-function Gallery() {
+function Card() {
     return (
         <div className='Gallery'>
             {jsonData.map((item) => (
@@ -15,4 +15,4 @@ function Gallery() {
     );
 }
 
-export default Gallery;
+export default Card;
