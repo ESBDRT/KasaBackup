@@ -21,7 +21,7 @@ function Host () {
         <div>
             <Header/>
             <Carrousel/>
-            <Logement Logement={item} mode="Full"/>
+            <Logement item={item} mode="Full"/>
             <Footer/>
         </div>
     )  

@@ -21,12 +21,19 @@ function Carrousel() {
 
   return (
     <div className='host-carrousel'>
-      {pictures?.map((picture, index) => (
-        <img className='pictures'key={index} src={picture} alt={`picture-${index}`} style={{ display: index === currentPicture? 'block' : 'none' }} />
-      ))}
-      <IoIosArrowBack className='arrow-left' onClick={PreviousPicture}/>
-      <IoIosArrowForward className='arrow-right' onClick={NextPicture} />
-    </div>
+  {pictures?.map((picture, index) => (
+    <img 
+      className='pictures' 
+      key={index} 
+      src={picture} 
+      alt={`picture-${index}`} 
+      style={{ display: index === currentPicture ? 'block' : 'none' }} 
+    />
+  ))}
+    <p className='counter'>{currentPicture + 1} / {pictures?.length}</p>
+  <IoIosArrowBack className='arrow-left' onClick={PreviousPicture}/>
+  <IoIosArrowForward className='arrow-right' onClick={NextPicture} />
+</div>
   );
 }
 

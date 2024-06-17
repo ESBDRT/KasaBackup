@@ -1,18 +1,8 @@
-import jsonData from '../../../data/logements.json';
 import Accordion from '../../Accordion/Accordion'
-import { useParams } from 'react-router-dom';
-import { FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa"
 
 
-function Full() {
-
-  // On récupére l'ID dans l'url et on défini une constante qui représente notre json
-  const { id } = useParams();
-  const data = jsonData;
-
-  // On trouve l'objet avec l'ID correspondant
-  const item = data.find((item) => item.id === id);
-  
+function Full({ item }) {
   // On récupére les tags, on les mets dans un tableau
   const tags = item.tags || [];
   const tagElements = tags.map((tag, index) => (
@@ -61,9 +51,9 @@ function Full() {
       <div className='star-div'>
         {renderStars(rating)}
       </div>
-      <div className='Accordion-host-div'>
-        <Accordion className='test' title='Description' content={item.description}/>
-        <Accordion className='test' title='Equipments' content={equipmentsList}/>
+      <div className='Accordion-host-div style'>
+        <Accordion title='Description' content={item.description}/>
+        <Accordion title='Equipments' content={equipmentsList}/>
       </div>
     </div>
   ); 

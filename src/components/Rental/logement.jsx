@@ -1,17 +1,16 @@
 import Card from "./Card/Card";
 import Full from "./Full/Full";
 
-function Logement({ logement, mode }) {
-
+function Logement({ item, mode }) {
     if (mode === "Card") {
       return (
-        <Card item={logement}/>
+        <Card item={item}/>
       )
         
     } else if (mode === "Full") {
       return (
         <div>
-          <Full item={logement}/>
+          <Full item={item}/>
         </div>       
       );
     }

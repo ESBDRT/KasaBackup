@@ -23,7 +23,6 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-shadow: black 5px 0 10px;
 }
 
 .cover-img {

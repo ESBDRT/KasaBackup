@@ -78,6 +78,10 @@
     margin-bottom: -15px;
 }
 
+.style {
+    list-style: none;
+}
+
 @media (max-width:768px) {
 
     .container {

@@ -1,12 +1,22 @@
-import './Banner.css' 
-import BannerImg from '../../assets/background.png';
+import HomeBanner from '../Banner/HomeBanner/HomeBanner.jsx';
+import AboutBanner from '../Banner/AboutBanner/AboutBanner.jsx';
 
-function Banner() {
-    return (
-    <div className='banner'>
-        <p className='text'>Chez vous, partout et ailleurs</p>
-        <img src={BannerImg} className='banner-img' alt='landscape-img'/>
-    </div>
-)}
+
+function Banner({ mode }) {
+    if (mode === "Home") {
+      return (
+        <div className='banner'>
+            <HomeBanner/>
+        </div>
+      )
+        
+    } else if (mode === "About") {
+      return (
+        <div>
+          <AboutBanner/>
+        </div>       
+      );
+    }
+}
 
 export default Banner;

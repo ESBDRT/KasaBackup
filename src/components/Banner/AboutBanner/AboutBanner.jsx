@@ -1,5 +1,5 @@
-import './Banner.css' 
-import BannerImg from '../../assets/Background2.png';
+import './../Banner.css' 
+import BannerImg from '../../../assets/Background2.png';
 
 function AboutBanner() {
     return (
