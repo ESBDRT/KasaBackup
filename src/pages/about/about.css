@@ -5,3 +5,9 @@
     flex-wrap: wrap;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .Accordion-div {
+        align-items: normal;
+    }
+}

@@ -4,6 +4,7 @@ import Error404 from '../../pages/404/404.jsx';
 import Host from '../../pages/host/host.jsx'
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 
+
 const router = createBrowserRouter([
     {
       path: '/',
@@ -27,7 +28,6 @@ const router = createBrowserRouter([
   function RouterComp() {
     return (
       <RouterProvider router={router}/>
-      
     );
   }
 

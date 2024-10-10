@@ -1,19 +1,25 @@
 .Gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 30px 100px;
+    justify-content: flex-start;
     background-color: #F6F6F6;
     border-radius: 10px;
     text-decoration: none;
+    gap: 20px;
+    width: 89%;
+    margin-left: 100px;
+    margin-top: 30px;
+    padding-bottom: 30px;
 }
+
 
 .article {
     border-radius: 5px;
-    width: 26%;
+    width: 30%;
     height: 340px;
-    margin: 40px 0px 20px 0px;
     text-decoration: none;
+    margin-top: 30px;
+    padding-left: 30px;
 }
 
 .title {
@@ -35,13 +41,13 @@
 @media (max-width: 768px) {
     .Gallery {
         flex-direction: column;
-        margin: 0px 20px 0px 20px;
+        margin: 0px 0px 0px 0px;
         background-color: white;
     }
 
     .article {
         width: 100%;
-        margin: 25px 0px 10px 0px;
+       
     }
 
     
