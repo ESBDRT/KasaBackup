@@ -12,7 +12,7 @@ function Host () {
     const { id } = useParams();
     const data = jsonData;
 
-  // On trouve l'objet avec l'ID correspondant
+
     const item = data.find((item) => item.id === id);
     if (!item) {
         return (<Error404/>)

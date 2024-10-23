@@ -43,11 +43,12 @@
         flex-direction: column;
         margin: 0px 0px 0px 0px;
         background-color: white;
+        gap: 0px;
     }
 
     .article {
         width: 100%;
-       
+        padding-left: 25px;
     }
 
     
